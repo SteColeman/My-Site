@@ -73,6 +73,11 @@ position: sticky;
 top: 0;
 }
 
+.name {
+  position: sticky;
+  bottom: 10;
+}
+
 @keyframes rotate {
   to {
     transform: rotate(360deg);
