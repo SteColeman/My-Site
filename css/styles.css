@@ -41,9 +41,10 @@ p {
 }
 
 .top-container {
-  background-image: linear-gradient(#2C2940, #4C3A5D, #3C4973, #777AA6, #C8C5D9);
+  background-color: #64CCC6;
+  /* background-image: linear-gradient(#2C2940, #4C3A5D, #3C4973, #777AA6, #C8C5D9); */
   position: relative;
-  height: 100vh;
+  height: 200vh;
 }
 
 .middle-container {
@@ -62,8 +63,27 @@ p {
 }
 
 .circle-logo {
-  width: 60%;
+  width: 50%;
+  animation: rotate 1s linear; /*infinite;*/
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -2s);
+  animation-iteration-count: 1;
+ animation-fill-mode: both;
+position: sticky;
+top: 0;
 }
+
+.name {
+  position: sticky;
+  bottom: 10;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 .pro {
   text-decoration: underline;
